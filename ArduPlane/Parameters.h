@@ -97,7 +97,8 @@ public:
         k_param_ground_steer_alt,        
         k_param_ground_steer_dps,
         k_param_rally_limit_km,
-
+        k_param_rssi_rc,
+        
         // 110: Telemetry control
         //
         k_param_gcs0 = 110,         // stream rates for port0
@@ -391,6 +392,7 @@ public:
     AP_Int8 flap_2_percent;
     AP_Int8 flap_2_speed;
     AP_Int8 rssi_pin;
+    AP_Int8 rssi_rc;
     AP_Int8 inverted_flight_ch;             // 0=disabled, 1-8 is channel for inverted flight trigger
     AP_Int8 stick_mixing;
     AP_Float takeoff_throttle_min_speed;
